@@ -1,0 +1,114 @@
+/* category-list */
+
+#category{
+    background-color: #fff;
+    padding: 5px 0;
+    /* margin-top: 10px; */
+    height: 100%;
+    display: inline-block;
+    border: 1px solid whitesmoke;
+    border-radius: 12px ;
+    position: relative;
+    bottom: 17px;
+}
+
+#category-list{
+    font-size: 13px;
+    list-style-type: none;
+    padding: 2px 40px 2px 0;
+    
+}
+
+#category-list-link{
+    color: #757575;
+    margin: 14px;
+    text-decoration: none;
+}
+
+
+#category ul{
+    margin-left: -27px;
+    margin-bottom: 0;
+
+}
+
+#category-logo{
+    color: #757575;
+    border: 1px solid #f5f5f5;
+    border-radius: 25px;
+    background-color: #f5f5f5;
+    padding: 1px;
+}
+
+/* Slideshow  */
+.slideshow {
+  max-width: 825px;
+  position: relative;
+  margin: auto;
+  display: inline-block;
+  top: 7px;
+  border-radius: 12px;
+  border: 1px solid whitesmoke;
+}
+
+#mysliders{
+    border-radius: 12px;
+    border: 1px solid whitesmoke;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  background-color: rgba(0,0,0,0.8);
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0px 2px 0px 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  bottom: 30px;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade  {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
